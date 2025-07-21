@@ -13,7 +13,8 @@ const app = express(); // ✅ Must be declared before using app.use()
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://ai-assistant-delta-nine.vercel.app" // ✅ Your real deployed Vercel frontend
+  "https://ai-assistant-delta-nine.vercel.app", // ✅ Your real deployed Vercel frontend
+  "https://ai-assistant-git-main-saptarshi-nandis-projects.vercel.app"
 ];
 
 app.use(cors({
