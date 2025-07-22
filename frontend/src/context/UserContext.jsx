@@ -14,7 +14,7 @@ function UserContext({children}) {
             setUserData(result.data)
             console.log(result.data)
         } catch (error) {
-            console.log(error)
+            console.log("userContext error ::"+error.message)
         }
     }
 
@@ -23,7 +23,7 @@ try {
   const result=await axios.post(`${serverUrl}/api/user/asktoassistant`,{command},{withCredentials:true})
   return result.data
 } catch (error) {
-  console.log(error)
+  console.log("in the userContext gemini res: "+error)
 }
     }
 

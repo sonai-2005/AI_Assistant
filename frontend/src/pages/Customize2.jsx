@@ -26,7 +26,7 @@ setLoading(false)
             navigate("/")
         } catch (error) {
             setLoading(false)
-            console.log(error)
+            console.log(" in the customise ::::: 29 line"+error)
         }
     }
 

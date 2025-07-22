@@ -25,7 +25,7 @@ try {
   setLoading(false)
    navigate("/")
 } catch (error) {
-  console.log(error)
+  console.log("in the signin 28 line "+error.message)
   setUserData(null)
   setLoading(false)
   setErr(error.response.data.message)

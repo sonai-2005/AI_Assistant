@@ -26,7 +26,7 @@ try {
   setLoading(false)
   navigate("/customize")
 } catch (error) {
-  console.log(error)
+  console.log("sign up errror :29 LINE:: "+error)
   setUserData(null)
   setLoading(false)
   setErr(error.response.data.message)
